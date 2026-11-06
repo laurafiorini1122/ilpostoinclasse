@@ -1,0 +1,441 @@
+/* Il mio posto c'è sempre: foglio di stile unico.
+   Misure in rem: il testo si ingrandisce con le impostazioni del browser.
+   Tutti i colori del testo hanno contrasto almeno 4,5:1 sul loro fondo. */
+
+@font-face {
+  font-family: 'AHN';
+  src: url('caratteri/ahn-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'AHN';
+  src: url('caratteri/ahn-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'AHN';
+  src: url('caratteri/ahn-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --testo: #2b2621;
+  --testo-tenue: #574d44;
+  --accento: #a8391c;        /* terracotta: 6,2:1 su bianco */
+  --accento-scuro: #7f2a12;
+  --fuoco: #1b3f8a;
+  --bianco: #ffffff;
+
+  --giallo: #f2b632;
+  --verde: #5fb46f;
+  --azzurro: #4e9bd8;
+  --corallo: #e8775a;
+  --lilla: #a88bd6;
+
+  /* fondi delle pagine */
+  --fondo-casa: #ffe6d6;
+  --fondo-elenco: #efe7fb;
+  --fondo-legame: #fff1b8;
+  --fondo-vita: #dcf2df;
+  --fondo-libero: #dbeefb;
+
+  --raggio: 1.25rem;
+  --larghezza: 46rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'AHN', 'Atkinson Hyperlegible', Verdana, 'Segoe UI', system-ui, sans-serif;
+  font-size: 1.25rem;          /* 20 px con le impostazioni normali */
+  line-height: 1.6;
+  color: var(--testo);
+  background-color: var(--fondo);
+  /* puntini colorati leggeri, solo decorativi */
+  background-image:
+    radial-gradient(circle at 8% 18rem, rgba(255,255,255,.55) 0 5rem, transparent 5.05rem),
+    radial-gradient(circle at 94% 34rem, rgba(255,255,255,.5) 0 7rem, transparent 7.05rem),
+    radial-gradient(circle at 12% 60rem, rgba(255,255,255,.45) 0 4rem, transparent 4.05rem);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.tema-casa   { --fondo: var(--fondo-casa);   --colore: var(--corallo); }
+.tema-elenco { --fondo: var(--fondo-elenco); --colore: var(--lilla); }
+.tema-legame { --fondo: var(--fondo-legame); --colore: var(--giallo); }
+.tema-vita   { --fondo: var(--fondo-vita);   --colore: var(--verde); }
+.tema-libero { --fondo: var(--fondo-libero); --colore: var(--azzurro); }
+
+/* ---------- accessibilità ---------- */
+
+.salta {
+  position: absolute;
+  left: 1rem;
+  top: -10rem;
+  z-index: 10;
+  background: var(--bianco);
+  color: var(--accento-scuro);
+  padding: .75rem 1.25rem;
+  border-radius: .5rem;
+  font-weight: 700;
+}
+.salta:focus { top: 1rem; }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: .25rem solid var(--fuoco);
+  outline-offset: .2rem;
+  border-radius: .3rem;
+}
+main:focus { outline: none; }
+
+/* ---------- testata ---------- */
+
+.testata {
+  background: var(--bianco);
+  border-top: .6rem solid transparent;
+  border-image: linear-gradient(90deg,
+    var(--giallo) 0 20%, var(--verde) 20% 40%, var(--azzurro) 40% 60%,
+    var(--corallo) 60% 80%, var(--lilla) 80% 100%) 1;
+  box-shadow: 0 .15rem 0 rgba(43,38,33,.08);
+}
+.testata-interno {
+  max-width: var(--larghezza);
+  margin: 0 auto;
+  padding: .5rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .25rem 1.5rem;
+}
+.marchio {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  min-height: 3rem;
+  color: var(--testo);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.marchio-icona { width: 2.2rem; height: 2.2rem; flex: none; }
+.testata nav ul {
+  list-style: none;
+  display: flex;
+  gap: .25rem;
+  margin: 0;
+  padding: 0;
+}
+.testata nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0 .9rem;
+  border-radius: 999px;
+  color: var(--accento-scuro);
+  font-weight: 700;
+  text-decoration: none;
+}
+.testata nav a:hover { background: var(--fondo); text-decoration: underline; }
+.testata nav a[aria-current="page"] {
+  background: var(--fondo);
+  text-decoration: underline;
+  text-decoration-thickness: .15rem;
+  text-underline-offset: .3rem;
+}
+
+/* ---------- contenuto ---------- */
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--larghezza);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+h1, h2, h3 { line-height: 1.25; margin: 0 0 .75rem; }
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; margin-top: 1.5rem; }
+p { margin: 0 0 1rem; }
+p:last-child { margin-bottom: 0; }
+
+a { color: var(--accento-scuro); text-underline-offset: .2rem; }
+a:hover { text-decoration-thickness: .15rem; }
+
+.apertura { padding: 1rem 0 1.5rem; }
+.sottotitolo {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--testo-tenue);
+  margin-top: -.25rem;
+}
+.intro { font-size: 1.3rem; max-width: 38rem; }
+
+.riquadro, .promemoria {
+  background: var(--bianco);
+  border-radius: var(--raggio);
+  padding: 1.5rem 1.5rem 1.75rem;
+  margin: 0 0 1.5rem;
+  box-shadow: 0 .25rem 0 rgba(43,38,33,.07);
+}
+.riquadro h2 {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+.riquadro h2::before {
+  content: "";
+  flex: none;
+  width: .9rem;
+  height: .9rem;
+  border-radius: 50%;
+  background: var(--colore);
+}
+
+.passi {
+  list-style: none;
+  counter-reset: passo;
+  padding: 0;
+  margin: 0 0 1.25rem;
+}
+.passi li {
+  counter-increment: passo;
+  position: relative;
+  padding-left: 3.25rem;
+  margin-bottom: 1.1rem;
+}
+.passi li::before {
+  content: counter(passo);
+  position: absolute;
+  left: 0;
+  top: -.1rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  background: var(--fondo);
+  border: .15rem solid var(--colore);
+}
+.passo-titolo { font-weight: 700; display: block; }
+.nota { color: var(--testo-tenue); font-style: italic; }
+
+.indirizzo {
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- pulsanti ---------- */
+
+.azione { text-align: center; margin: 2rem 0 0; }
+.pulsante {
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  min-height: 3rem;
+  padding: .75rem 1.5rem;
+  border-radius: 999px;
+  background: var(--accento);
+  color: var(--bianco);
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 .25rem 0 var(--accento-scuro);
+}
+.pulsante:hover { background: var(--accento-scuro); text-decoration: underline; }
+.pulsante:active { transform: translateY(.15rem); box-shadow: 0 .1rem 0 var(--accento-scuro); }
+.pulsante svg { width: 1.6rem; height: 1.6rem; flex: none; }
+.pulsante-grande {
+  font-size: 1.25rem;
+  border-radius: var(--raggio);
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+.pulsante-dettaglio {
+  display: block;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.segnaposto {
+  border: .2rem dashed var(--colore);
+  border-radius: var(--raggio);
+  background: var(--fondo);
+  padding: 1.25rem 1.5rem;
+}
+
+/* ---------- pagina del soggetto ---------- */
+
+.briciole ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+.briciole li + li::before {
+  content: "›";
+  margin: 0 .5rem;
+  color: var(--testo-tenue);
+}
+.briciole a {
+  display: inline-block;
+  padding: .6rem 0;
+}
+.briciole a[aria-current="page"] { color: var(--testo); text-decoration: none; }
+
+.numero {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  margin: 0 0 .75rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.numero-cifre {
+  display: inline-grid;
+  place-items: center;
+  min-width: 3.2rem;
+  height: 3.2rem;
+  padding: 0 .4rem;
+  border-radius: 50%;
+  background: var(--bianco);
+  border: .25rem solid var(--colore);
+  font-size: 1.5rem;
+  letter-spacing: 0;
+}
+.nel-quaderno { font-size: 1.15rem; color: var(--testo-tenue); }
+.nel-quaderno em { color: var(--testo); }
+
+.promemoria {
+  background: var(--bianco);
+  border: .25rem solid var(--colore);
+  position: relative;
+}
+.promemoria h2 { font-size: 1.3rem; }
+
+.vicini {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.vicino {
+  display: block;
+  background: var(--bianco);
+  border-radius: var(--raggio);
+  padding: 1rem 1.25rem;
+  font-weight: 700;
+  min-height: 3rem;
+}
+.vicino-succ { text-align: right; }
+.vicino-etichetta {
+  display: block;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--testo-tenue);
+}
+
+/* ---------- elenco dei soggetti ---------- */
+
+.elenco {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 1rem;
+}
+.scheda a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 4.5rem;
+  padding: .75rem 1.25rem .75rem .75rem;
+  background: var(--bianco);
+  border-radius: var(--raggio);
+  color: var(--testo);
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 .25rem 0 rgba(43,38,33,.07);
+}
+.scheda a:hover { text-decoration: underline; box-shadow: 0 .25rem 0 var(--colore); }
+.scheda-numero {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background: var(--fondo);
+  border: .2rem solid var(--colore);
+  font-size: 1.3rem;
+}
+/* nell'elenco ogni scheda prende i colori del suo tipo */
+.scheda.tema-legame { --fondo: var(--fondo-legame); }
+.scheda.tema-vita   { --fondo: var(--fondo-vita); }
+.scheda.tema-libero { --fondo: var(--fondo-libero); }
+
+/* ---------- piede ---------- */
+
+.piede {
+  background: var(--bianco);
+  border-top: .4rem solid var(--colore);
+  padding: 1.5rem 1.25rem;
+  font-size: 1rem;
+  color: var(--testo-tenue);
+}
+.piede p { max-width: var(--larghezza); margin: 0 auto .5rem; }
+
+/* ---------- schermi piccoli ---------- */
+
+@media (max-width: 30em) {
+  body { font-size: 1.15rem; }
+  h1 { font-size: 1.8rem; }
+  .riquadro, .promemoria { padding: 1.25rem 1.1rem 1.4rem; }
+  .vicino-succ { text-align: left; }
+  .pulsante-grande { width: 100%; }
+}
+
+/* ---------- colori forzati (contrasto elevato di Windows) ---------- */
+
+@media (forced-colors: active) {
+  .pulsante, .riquadro, .promemoria, .scheda a, .vicino { border: 2px solid CanvasText; }
+}
+
+/* ---------- stampa della pagina ---------- */
+
+@media print {
+  .testata nav, .salta, .briciole, .vicini, .azione { display: none; }
+  body { background: #fff; font-size: 12pt; }
+  .riquadro, .promemoria { box-shadow: none; border: 1px solid #999; }
+}

@@ -1,0 +1,39 @@
+# Pubblicazione automatica su GitHub Pages.
+# A ogni push sul ramo main GitHub prende la cartella sito/, ci aggiunge i disegni
+# e la pubblica. Il sito si genera sul computer con aggiorna_sito.bat:
+# qui non si costruisce niente.
+name: Pubblica il sito
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  pubblica:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pubblicazione.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Aggiunge i disegni
+        run: |
+          mkdir -p sito/disegni
+          cp disegni/*.pdf sito/disegni/ 2>/dev/null || true
+          rm -f sito/.generato
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: sito
+      - id: pubblicazione
+        uses: actions/deploy-pages@v4

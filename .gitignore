@@ -1,0 +1,8 @@
+# I disegni stanno in disegni/: la copia dentro sito/ serve solo per l'anteprima
+sito/disegni/
+# Mai l'Excel nel repository (contiene note e prompt di lavoro)
+*.xlsx
+*.xlsb
+~$*
+__pycache__/
+.claude/

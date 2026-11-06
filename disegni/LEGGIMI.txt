@@ -1,0 +1,14 @@
+Qui vanno i disegni da stampare per la classe, in PDF A4 verticale.
+
+Nome dei file: il numero del soggetto a due cifre.
+  01.pdf  02.pdf  03.pdf ... 15.pdf
+
+Dopo aver aggiunto o sostituito un disegno:
+  1. doppio clic su aggiorna_sito.bat
+  2. pubblica le modifiche (vedi GUIDA.md, "Aggiornare il sito")
+
+Sul sito il file si scarica con un nome chiaro, per esempio
+Il-mio-posto-01-Il-mio-banco.pdf: non serve rinominarlo qui.
+
+Consiglio: quando esporti il PDF, dagli un titolo nelle proprietà del documento
+(per esempio "Il mio banco, pagina per la classe"). Lo leggono i lettori di schermo.
