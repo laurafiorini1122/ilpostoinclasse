@@ -2,6 +2,12 @@
 # A ogni push sul ramo main GitHub prende la cartella sito/, ci aggiunge i disegni
 # e la pubblica. Il sito si genera sul computer con aggiorna_sito.bat:
 # qui non si costruisce niente.
+#
+# Due fasi separate, come consiglia GitHub:
+#   1. «prepara» crea il pacchetto del sito;
+#   2. «pubblica» lo mette online, solo quando il pacchetto è pronto.
+# Se la seconda fase si ferma per un intoppo di GitHub, basta «Re-run failed jobs»:
+# riparte solo la pubblicazione e il pacchetto non viene duplicato.
 name: Pubblica il sito
 
 on:
@@ -19,11 +25,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  pubblica:
+  prepara:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.pubblicazione.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
       - name: Aggiunge i disegni
@@ -35,5 +38,13 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: sito
+
+  pubblica:
+    needs: prepara
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pubblicazione.outputs.page_url }}
+    steps:
       - id: pubblicazione
         uses: actions/deploy-pages@v4

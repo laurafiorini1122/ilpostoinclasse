@@ -38,6 +38,17 @@ Come aggiungere un'idea o un consiglio e come cambiare i testi delle pagine
 4. Pubblica: chiedi a Claude «pubblica le modifiche del sito» oppure usa
    GitHub Desktop (Commit, poi Push). Dopo uno o due minuti il sito online è aggiornato.
 
+### Se arriva l'email «Pubblica il sito: Tutti i lavori sono falliti»
+
+La pubblicazione ha due fasi: **prepara** (crea il pacchetto del sito) e
+**pubblica** (lo mette online). Di solito si ferma la seconda, per un intoppo di GitHub.
+
+1. Clicca **Visualizza l'esecuzione del flusso di lavoro** nell'email.
+2. In alto a destra clicca **Re-run jobs**, poi **Re-run failed jobs** e conferma.
+3. Se si ferma di nuovo, fai partire una pubblicazione nuova: scheda **Actions**,
+   **Pubblica il sito** a sinistra, poi **Run workflow** e il pulsante verde **Run workflow**.
+4. Se non funziona ancora, manda a Claude la schermata dell'errore.
+
 ## Pubblicare la prima volta su GitHub Pages
 
 GitHub è il servizio dove sta già La scatola di latta. GitHub Pages pubblica gratis
