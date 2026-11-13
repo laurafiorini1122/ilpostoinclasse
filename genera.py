@@ -353,7 +353,25 @@ def in_linea(testo):
     t = e(testo)
     t = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t)
     t = re.sub(r"\[\[(.+?)\]\]", r'<span class="segnaposto-breve">\1</span>', t)
+    # [così] = parte da scegliere con la famiglia (anche su più righe)
+    t = re.sub(r"\[([^\[\]]+)\]", r'<span class="scelta">[\1]</span>', t)
     return t
+
+
+def messaggio_html(righe):
+    """Righe che cominciano con «>»: il messaggio da leggere alla classe."""
+    paragrafi, attuale = [], []
+    for r in righe + [">"]:
+        r = r[1:].strip()
+        if r:
+            attuale.append(r)
+        elif attuale:
+            paragrafi.append(attuale)
+            attuale = []
+    corpo = "\n".join("<p>" + in_linea("\n".join(p)).replace("\n", "<br>\n") + "</p>"
+                      for p in paragrafi)
+    return ('<div class="messaggio" role="group" aria-label="Messaggio da leggere alla classe">\n'
+            + corpo + "\n</div>")
 
 
 def ancora(testo):
@@ -375,14 +393,18 @@ def blocchi_html(righe, segnaposti=None):
     out = []
     gruppi, attuale = [], []
     for r in righe + [""]:
-        if r.strip():
-            attuale.append(r.strip())
-        elif attuale:
+        r = r.strip()
+        messaggio = r.startswith(">")
+        if attuale and (messaggio != attuale[0].startswith(">") or not r):
             gruppi.append(attuale)
             attuale = []
+        if r:
+            attuale.append(r)
     for g in gruppi:
         primo = g[0]
-        if len(g) == 1 and primo in segnaposti:
+        if primo.startswith(">"):
+            out.append(messaggio_html(g))
+        elif len(g) == 1 and primo in segnaposti:
             out.append(segnaposti[primo])
         elif primo.startswith("### "):
             titolo, id_ = separa_id(primo[4:])

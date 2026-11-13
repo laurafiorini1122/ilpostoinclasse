@@ -506,6 +506,22 @@ tbody th { font-weight: 700; white-space: nowrap; }
   font-size: 1.25rem;
 }
 .modo { font-size: 1.3rem; }
+
+/* messaggio da leggere alla classe (Per cominciare) */
+.messaggio {
+  margin: 0 0 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--fondo);
+  border-left: .5rem solid var(--colore);
+  border-radius: .75rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.messaggio p:last-child { margin-bottom: 0; }
+.scelta {
+  font-style: italic;
+  color: var(--blu-scuro);
+}
 .pagina4 { margin-top: 1rem; }
 .vuoto { color: var(--testo-tenue); font-style: italic; }
 

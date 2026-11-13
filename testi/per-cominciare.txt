@@ -3,6 +3,8 @@
 # Come si scrive: una riga vuota separa i paragrafi; «## » all'inizio fa un titolo,
 # «### » un titolo più piccolo; «- » una voce di elenco; «1. » un passo numerato;
 # **parole** in grassetto; [[testo]] un segnaposto in un riquadro tratteggiato.
+# «> » all'inizio delle righe: messaggio da leggere alla classe, in un riquadro a parte
+# (una riga con solo «>» separa i paragrafi del messaggio); [testo] una parte da scegliere.
 # Dopo una modifica: doppio clic su aggiorna_sito.bat.
 
 Il quaderno funziona quando gli adulti intorno al bambino si dividono i compiti. Tutto parte dal consenso della famiglia.
@@ -41,4 +43,28 @@ Se il bambino è a casa in istruzione domiciliare, lo stesso ruolo può averlo i
 
 ## La traccia del messaggio alla classe
 
-[[Testo da scrivere: qui andrà la traccia del messaggio che l'insegnante dà alla classe, concordato con la famiglia.]]
+Questa è una traccia, non un copione. Leggetela insieme alla famiglia e cambiate tutto quello che serve: le parti tra parentesi quadre sono da scegliere o da completare. Conviene parlare alla classe con calma, magari in cerchio, lasciando tempo per le domande.
+
+> Bambini, oggi vi voglio parlare di [nome].
+>
+> Per un po' di tempo [nome] non potrà venire a scuola.
+> [Scegliete con la famiglia una sola frase:
+> Deve stare in ospedale per farsi curare.
+> Deve stare a casa per farsi curare.
+> Ha bisogno di cure che richiedono tempo.]
+>
+> Non sappiamo ancora quanto tempo ci vorrà.
+>
+> [Se è vero e la famiglia è d'accordo: Non è una cosa che si attacca. E non è colpa di nessuno.]
+>
+> Anche se non è qui, [nome] fa sempre parte della nostra classe. Il suo posto resta il suo posto.
+>
+> [Nome] ha un quaderno da colorare. Ogni tanto colorerà un disegno e ce lo farà arrivare. Noi risponderemo preparando insieme un foglio, e ognuno di voi ci metterà un pezzetto e il proprio nome. I disegni di [nome] li terremo in un quaderno che resterà sul suo banco.
+>
+> Così a [nome] arriverà un pezzetto della nostra classe e a noi un pezzetto di [nome].
+>
+> Forse adesso vi vengono in mente tante domande. È normale. Potete farmele quando volete: se so la risposta ve la dico, se non la so ve lo dico.
+
+### Se per ora [nome] non vuole o non può avere contatti
+
+> [Nome] adesso ha bisogno di tranquillità e per un po' non riceverà i nostri messaggi. Non è perché non ci vuole bene: a volte, quando si è stanchi, si ha bisogno di silenzio. Il suo posto resta qui lo stesso. Quando sarà il momento ve lo dirò.
