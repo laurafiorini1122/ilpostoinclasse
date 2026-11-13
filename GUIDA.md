@@ -9,22 +9,28 @@ su GitHub Pages e come collegare in futuro il dominio ilpostoinclasse.it.
 |---|---|
 | `aggiorna_sito.bat` | Doppio clic: legge l'Excel e ricrea il sito. |
 | `anteprima.bat` | Doppio clic: apre il sito nel browser, solo sul tuo computer. |
-| `disegni/` | Qui metti i PDF dei disegni: `01.pdf`, `02.pdf` … `15.pdf`. |
+| `disegni/` | Qui metti i PDF dei fogli da stampare: `01.pdf`, `02.pdf` … `15.pdf`. |
+| `testi/` | I testi delle pagine fisse e le descrizioni dell'elenco. |
+| `idee/` | Le idee dalle classi e i consigli (vedi `README.md`). |
 | `sito/` | Il sito pronto. Lo crea lo script: non modificarlo a mano. |
-| `genera.py` | Lo script. In alto ci sono i testi fissi (consiglio di stampa, promemoria). |
+| `genera.py` | Lo script. In alto ci sono le frasi brevi fisse (menu, piè di pagina, riquadro delle idee). |
 | `modello/` | Colori, grafica e caratteri. |
 
 L'Excel resta su Google Drive e non entra mai nel sito: lo script ne legge solo
-le colonne N., Soggetto, Che cosa fa la classe, Titolo della pagina da incollare,
-Indirizzo sul sito e Tipo. Le note e i prompt restano privati.
+le colonne N., Soggetto, Tipo, Frase stimolo, Che cosa fa la classe, Titolo della
+pagina da incollare, Indirizzo sul sito, Come lavora la classe e Che cosa arriva
+al bambino. Le note, lo stato e i prompt restano privati.
 Se salvi una versione nuova (per esempio `_v6`), lo script la trova da solo.
 
 Il colore di fondo di ogni pagina dipende dalla colonna Tipo:
 giallo per Legame, verde per Vita di classe, azzurro per Libero.
 
+Come aggiungere un'idea o un consiglio e come cambiare i testi delle pagine
+è spiegato in `README.md`.
+
 ## Aggiornare il sito
 
-1. Modifica l'Excel o aggiungi un PDF in `disegni/`.
+1. Modifica l'Excel, un file in `testi/` o in `idee/`, oppure aggiungi un PDF in `disegni/`.
 2. Doppio clic su `aggiorna_sito.bat`. Leggi il messaggio nella finestra nera:
    se c'è scritto **ATTENZIONE**, il sito non è cambiato e la finestra ti dice
    quale riga dell'Excel correggere.

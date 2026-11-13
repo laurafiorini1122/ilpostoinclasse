@@ -1,0 +1,21 @@
+# Testi della pagina «Idee e consigli».
+# Le righe che cominciano con # non compaiono sul sito.
+# Come si scrive: una riga vuota separa i paragrafi; «## » all'inizio fa un titolo,
+# «### » un titolo più piccolo; «- » una voce di elenco; «1. » un passo numerato;
+# **parole** in grassetto; [[testo]] un segnaposto in un riquadro tratteggiato.
+# Dopo una modifica: doppio clic su aggiorna_sito.bat.
+# La riga {{consigli}} indica dove compaiono i consigli scritti in idee/generale.txt.
+
+Il quaderno cresce con chi lo usa. In questa pagina raccogliamo i consigli di insegnanti, docenti della scuola in ospedale e dell'istruzione domiciliare e famiglie: come organizzare lo scambio, come tenere i rapporti fra scuola e famiglia, che cosa fare quando la staffetta si ferma per un po'. Le idee su un singolo soggetto si trovano nella sua scheda, nel riquadro Idee dalle classi.
+
+## I consigli
+
+{{consigli}}
+
+## Come mandare un'idea o un consiglio
+
+Scrivi a [[indirizzo da definire]]. Indica il tuo ruolo (per esempio insegnante di classe, docente della scuola in ospedale, genitore) e, se parli di un soggetto, il suo numero e il titolo. Leggo tutti i messaggi e pubblico quelli che possono servire ad altri, dopo averli sistemati. Non pubblico il nome di chi scrive, solo il ruolo.
+
+## Per proteggere i bambini
+
+Non scrivere i nomi dei bambini, della scuola, dell'ospedale o del reparto e nessuna informazione sulla salute. Non mandare foto di bambini. Le foto dei lavori della classe sono benvenute, purché non si leggano nomi.

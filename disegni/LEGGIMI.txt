@@ -1,4 +1,4 @@
-Qui vanno i disegni da stampare per la classe, in PDF A4 verticale.
+Qui vanno i fogli da stampare per la classe, in PDF A4 verticale.
 
 Nome dei file: il numero del soggetto a due cifre.
   01.pdf  02.pdf  03.pdf ... 15.pdf

@@ -1,0 +1,36 @@
+# Testi della pagina «Il quaderno (home)».
+# Le righe che cominciano con # non compaiono sul sito.
+# Come si scrive: una riga vuota separa i paragrafi; «## » all'inizio fa un titolo,
+# «### » un titolo più piccolo; «- » una voce di elenco; «1. » un passo numerato;
+# **parole** in grassetto; [[testo]] un segnaposto in un riquadro tratteggiato.
+# Dopo una modifica: doppio clic su aggiorna_sito.bat.
+
+## A che cosa serve
+
+Il quaderno è pensato per un bambino della scuola primaria che per un lungo periodo non può andare a scuola, perché è ricoverato in ospedale o deve restare a casa per le cure. Serve a tenere vivo il suo posto nella classe. Non parla della malattia: parla della presenza.
+
+Nelle prime settimane di solito arrivano molti disegni e messaggi. Poi la classe riprende il suo ritmo e il contatto rischia di diradarsi senza che nessuno lo voglia. Il quaderno dà allo scambio una forma e un passo regolare, perché il legame accompagni il bambino per tutto il tempo dell'assenza.
+
+## Lo spirito del quaderno
+
+Alcune scelte guidano tutto il quaderno.
+
+- **È di carta.** Si colora, si incolla, si tocca.
+- **Lo scambio va nei due sensi.** Il bambino apre, la classe risponde: per ogni soggetto i compagni vedono che cosa ha fatto e gli rispondono con un lavoro loro.
+- **Crea un mondo comune.** Molte pagine sono un po' fantastiche: finestre magiche, zaini incantati, tesori nascosti. Non serve che sia tutto vero, serve che appartenga solo a lui e ai suoi compagni.
+- **Il bambino è uno fra gli altri.** Nei lavori della classe il suo disegno sta in fila con quelli dei compagni, non al centro né in una cornice speciale.
+- **Resta al bambino e ha un gemello in classe.** Alla fine il quaderno è suo, un ricordo di come la classe lo ha tenuto con sé. La classe a sua volta conserva le pagine del bambino in un quaderno gemello.
+
+## Com'è fatto
+
+Il quaderno ha quindici soggetti, per bambini della primaria dai 6 ai 10 anni. Ogni soggetto occupa quattro pagine.
+
+| Pagina | Che cosa c'è |
+| 1, a sinistra | Una domanda per il bambino, una seconda possibilità se non vuole o non può rispondere e le righe per scrivere |
+| 2, a destra | Il disegno da colorare |
+| 3, a sinistra | Il retro bianco, per usare anche i pennarelli con un cartoncino sotto |
+| 4, a destra | La pagina dove il bambino incolla il lavoro arrivato dalla classe o lo ferma con una graffetta |
+
+In apertura ci sono il frontespizio con il nome del bambino e della sua classe, una pagina che spiega il quaderno a lui, una per gli adulti e una con l'indirizzo del sito. In fondo trovano posto le firme dei compagni e degli insegnanti e lo spazio per incollare una busta, dove il bambino conserva i fogli dei compagni che non stanno nelle pagine.
+
+I soggetti sono di tre tipi: alcuni tengono il legame in modo diretto (il banco, la lavagna dei messaggi, lo stemma), altri riprendono la vita di classe (la merenda, la ricreazione, la gita), altri sono liberi e fantastici (le nuvole, il tesoro nascosto, la maschera).

@@ -30,6 +30,8 @@
   --accento: #a8391c;        /* terracotta: 6,2:1 su bianco */
   --accento-scuro: #7f2a12;
   --fuoco: #1b3f8a;
+  --blu: #24578f;            /* 7:1 su bianco */
+  --blu-scuro: #173c66;
   --bianco: #ffffff;
 
   --giallo: #f2b632;
@@ -44,6 +46,9 @@
   --fondo-legame: #fff1b8;
   --fondo-vita: #dcf2df;
   --fondo-libero: #dbeefb;
+
+  --segnaposto: #8a5a00;      /* bordo tratteggiato dei segnaposto */
+  --fondo-segnaposto: #fffbea;
 
   --raggio: 1.25rem;
   --larghezza: 46rem;
@@ -123,7 +128,7 @@ main:focus { outline: none; }
   box-shadow: 0 .15rem 0 rgba(43,38,33,.08);
 }
 .testata-interno {
-  max-width: var(--larghezza);
+  max-width: 64rem;
   margin: 0 auto;
   padding: .5rem 1.25rem;
   display: flex;
@@ -146,12 +151,13 @@ main:focus { outline: none; }
 .testata nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: .25rem;
   margin: 0;
   padding: 0;
 }
 .testata nav a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   min-height: 3rem;
   padding: 0 .9rem;
@@ -161,7 +167,8 @@ main:focus { outline: none; }
   text-decoration: none;
 }
 .testata nav a:hover { background: var(--fondo); text-decoration: underline; }
-.testata nav a[aria-current="page"] {
+.testata nav a[aria-current="page"],
+.testata nav a.sezione {
   background: var(--fondo);
   text-decoration: underline;
   text-decoration-thickness: .15rem;
@@ -269,6 +276,7 @@ a:hover { text-decoration-thickness: .15rem; }
   box-shadow: 0 .25rem 0 var(--accento-scuro);
 }
 .pulsante:hover { background: var(--accento-scuro); text-decoration: underline; }
+button.pulsante { border: 0; font: inherit; font-weight: 700; cursor: pointer; }
 .pulsante:active { transform: translateY(.15rem); box-shadow: 0 .1rem 0 var(--accento-scuro); }
 .pulsante svg { width: 1.6rem; height: 1.6rem; flex: none; }
 .pulsante-grande {
@@ -283,11 +291,23 @@ a:hover { text-decoration-thickness: .15rem; }
   font-size: 1rem;
 }
 
+/* Segnaposto: tutto ciò che è ancora da scrivere o da preparare.
+   Bordo tratteggiato e fondo crema, uguali in tutto il sito. */
 .segnaposto {
-  border: .2rem dashed var(--colore);
+  border: .2rem dashed var(--segnaposto);
   border-radius: var(--raggio);
-  background: var(--fondo);
+  background: var(--fondo-segnaposto);
   padding: 1.25rem 1.5rem;
+  margin: 0 0 1rem;
+}
+.segnaposto-breve {
+  border: .15rem dashed var(--segnaposto);
+  border-radius: .4rem;
+  background: var(--fondo-segnaposto);
+  padding: 0 .4rem;
+  color: var(--testo);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 /* ---------- pagina del soggetto ---------- */
@@ -405,37 +425,186 @@ a:hover { text-decoration-thickness: .15rem; }
 .scheda.tema-vita   { --fondo: var(--fondo-vita); }
 .scheda.tema-libero { --fondo: var(--fondo-libero); }
 
+/* ---------- elenco: descrizione sotto il titolo ---------- */
+
+.scheda a { align-items: flex-start; }
+.scheda-testo { display: block; padding-top: .35rem; }
+.scheda-titolo { display: block; font-size: 1.25rem; }
+.scheda-descrizione {
+  display: block;
+  margin-top: .2rem;
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: var(--testo-tenue);
+}
+
+/* ---------- testi delle pagine ---------- */
+
+.intro p { font-size: 1.25rem; }
+.intro { margin-bottom: 1.5rem; }
+.voci { padding-left: 1.4rem; margin: 0 0 1rem; }
+.voci li { margin-bottom: .75rem; }
+.voci li::marker { color: var(--accento); }
+.riquadro h3:first-child { margin-top: 0; }
+.riquadro ul + h3, .riquadro p + h3, .riquadro ol + h3, .riquadro div + h3 { margin-top: 1.75rem; }
+:target { scroll-margin-top: 1rem; }
+li:target { background: var(--fondo-segnaposto); border-radius: .5rem; outline: .2rem solid var(--colore); outline-offset: .3rem; }
+
+.tabella { overflow-x: auto; margin: 0 0 1rem; }
+table { border-collapse: collapse; width: 100%; font-size: 1.1rem; }
+th, td { text-align: left; vertical-align: top; padding: .6rem .75rem; border-bottom: .1rem solid #d9cfc4; }
+thead th { border-bottom: .2rem solid var(--colore); }
+tbody th { font-weight: 700; white-space: nowrap; }
+
+/* ---------- home: i due ingressi ---------- */
+
+.ingressi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 0;
+}
+.ingresso {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 6rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--raggio);
+  background: var(--accento);
+  color: var(--bianco);
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+  box-shadow: 0 .3rem 0 var(--accento-scuro);
+}
+.ingresso:hover { background: var(--accento-scuro); text-decoration: underline; }
+.ingresso svg { width: 2.2rem; height: 2.2rem; flex: none; }
+.ingresso-inizio { background: var(--blu); box-shadow: 0 .3rem 0 var(--blu-scuro); }
+.ingresso-inizio:hover { background: var(--blu-scuro); }
+
+/* ---------- pagina del soggetto ---------- */
+
+.prima-volta {
+  background: var(--bianco);
+  border-left: .5rem solid var(--colore);
+  border-radius: .75rem;
+  padding: .75rem 1.25rem;
+  margin: .5rem 0 1rem;
+  font-size: 1.15rem;
+}
+.prima-volta a { font-weight: 700; display: inline-block; padding: .4rem 0; }
+.etichetta { color: var(--testo-tenue); margin-bottom: .5rem; }
+.stimolo {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  background: var(--fondo);
+  border-radius: .75rem;
+  font-style: italic;
+  font-size: 1.25rem;
+}
+.modo { font-size: 1.3rem; }
+.pagina4 { margin-top: 1rem; }
+.vuoto { color: var(--testo-tenue); font-style: italic; }
+
+.contributi { list-style: none; padding: 0; margin: 1rem 0 0; }
+.contributi li + li { margin-top: 1rem; }
+.contributo { margin: 0; padding: 1rem 1.25rem; background: var(--fondo); border-radius: .75rem; }
+.contributo blockquote { margin: 0; }
+.contributo figcaption { margin-top: .5rem; font-weight: 700; font-size: 1.05rem; color: var(--testo-tenue); }
+
+.fondo-pagina {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.fondo-pagina a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3rem;
+  padding: .5rem 1.25rem;
+  background: var(--bianco);
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* ---------- foglio dei nomi ---------- */
+
+.foglio {
+  background: var(--bianco);
+  border-radius: var(--raggio);
+  padding: 2rem 1.5rem;
+  box-shadow: 0 .25rem 0 rgba(43,38,33,.07);
+}
+.foglio-sito { font-size: 1rem; color: var(--testo-tenue); margin-bottom: .25rem; }
+.foglio-titolo { font-size: 1.8rem; margin-bottom: 1.5rem; }
+.foglio-righe { list-style: none; padding: 0; margin: 0; }
+.foglio-righe li {
+  display: flex;
+  align-items: flex-end;
+  gap: .5rem;
+  height: 2.6rem;
+}
+.foglio-righe .nome { flex: none; }
+.foglio-righe .linea { border-bottom: .1rem solid var(--testo); height: 1.2rem; flex: 2; }
+.foglio-righe .linea-lunga { flex: 3; }
+.foglio-righe .due-punti { flex: none; font-weight: 700; }
+
+@page { size: A4; margin: 15mm; }
+
+@media print {
+  .foglio-nomi .testata, .foglio-nomi .piede, .no-stampa { display: none; }
+  .foglio-nomi main { padding: 0; max-width: none; }
+  .foglio { box-shadow: none; border: 0; padding: 0; border-radius: 0; }
+  .foglio-titolo { font-size: 20pt; margin-bottom: 8mm; }
+  .foglio-righe li { height: 11mm; font-size: 13pt; }
+}
+
 /* ---------- piede ---------- */
 
 .piede {
   background: var(--bianco);
   border-top: .4rem solid var(--colore);
   padding: 1.5rem 1.25rem;
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--testo-tenue);
 }
-.piede p { max-width: var(--larghezza); margin: 0 auto .5rem; }
+.piede ul {
+  list-style: none;
+  max-width: var(--larghezza);
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1.5rem;
+}
+.piede strong { color: var(--testo); }
 
 /* ---------- schermi piccoli ---------- */
 
 @media (max-width: 30em) {
-  body { font-size: 1.15rem; }
   h1 { font-size: 1.8rem; }
   .riquadro, .promemoria { padding: 1.25rem 1.1rem 1.4rem; }
-  .vicino-succ { text-align: left; }
+  .testata nav ul { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+  .testata nav a { padding: 0 .6rem; font-size: 1.05rem; }
+  .ingresso { font-size: 1.3rem; }
+  .fondo-pagina a { width: 100%; }
   .pulsante-grande { width: 100%; }
 }
 
 /* ---------- colori forzati (contrasto elevato di Windows) ---------- */
 
 @media (forced-colors: active) {
-  .pulsante, .riquadro, .promemoria, .scheda a, .vicino { border: 2px solid CanvasText; }
+  .pulsante, .riquadro, .promemoria, .scheda a, .vicino, .ingresso, .prima-volta, .fondo-pagina a { border: 2px solid CanvasText; }
 }
 
 /* ---------- stampa della pagina ---------- */
 
 @media print {
-  .testata nav, .salta, .briciole, .vicini, .azione { display: none; }
+  .testata nav, .salta, .briciole, .vicini, .azione, .prima-volta, .fondo-pagina, .ingressi { display: none; }
   body { background: #fff; font-size: 12pt; }
-  .riquadro, .promemoria { box-shadow: none; border: 1px solid #999; }
+  .riquadro, .promemoria { box-shadow: none; border: 1px solid #999; break-inside: avoid; }
 }

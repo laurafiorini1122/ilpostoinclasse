@@ -1,0 +1,44 @@
+# Testi della pagina «Per cominciare».
+# Le righe che cominciano con # non compaiono sul sito.
+# Come si scrive: una riga vuota separa i paragrafi; «## » all'inizio fa un titolo,
+# «### » un titolo più piccolo; «- » una voce di elenco; «1. » un passo numerato;
+# **parole** in grassetto; [[testo]] un segnaposto in un riquadro tratteggiato.
+# Dopo una modifica: doppio clic su aggiorna_sito.bat.
+
+Il quaderno funziona quando gli adulti intorno al bambino si dividono i compiti. Tutto parte dal consenso della famiglia.
+
+## Il primo passo: il consenso
+
+**Si raccoglie il consenso.** Il docente della scuola in ospedale o dell'istruzione domiciliare propone il quaderno alla famiglia e raccoglie il suo consenso al contatto con la classe, come per ogni raccordo con la scuola di appartenenza.
+
+## Chi lo accompagna
+
+### La famiglia
+
+Quando un figlio si ammala la vita di casa cambia di colpo. Alla preoccupazione per le cure si aggiunge spesso quella per la scuola: non solo le lezioni perse ma anche gli amici e il posto in classe. Il quaderno offre un modo semplice per tenere aperto questo legame, senza dover inventare ogni volta che cosa mandare. La famiglia dà il consenso al contatto con la classe e, quando serve, porta i fogli avanti e indietro.
+
+### La scuola di appartenenza
+
+Insieme alla famiglia la scuola decide il messaggio da dare ai compagni:
+
+- che cosa condividere della situazione del bambino, tenendo conto dell'età della classe
+- se il bambino desidera mantenere i contatti e in che modo
+- se per ora il contatto non è desiderato, come spiegare ai compagni che non è un gesto contro di loro
+
+### Gli insegnanti di classe
+
+Fra gli insegnanti della classe se ne individua uno di riferimento: riceve la foto della pagina del bambino, propone l'attività ai compagni, raccoglie il lavoro della classe, lo inoltra al bambino e tiene il quaderno gemello. Un solo referente evita che i materiali si disperdano o arrivino tutti insieme.
+
+### I docenti della scuola in ospedale e dell'istruzione domiciliare
+
+Se il bambino è ricoverato in un ospedale dove c'è la scuola in ospedale, il docente SiO e l'insegnante referente della classe concordano un calendario. Il calendario si adatta alle condizioni di salute del bambino e può cambiare in ogni momento.
+
+Il docente SiO scarica dal sito le pagine del quaderno e le propone al bambino. La staffetta si apre sempre con il banco (soggetto 1). Dal secondo soggetto in poi è il bambino a scegliere quale fare, nell'ordine che preferisce.
+
+I due docenti fanno anche da filtro. Regolano quanti materiali arrivano dalla classe e quando, perché lo scambio resti un piacere e non diventi un carico.
+
+Se il bambino è a casa in istruzione domiciliare, lo stesso ruolo può averlo il docente dell'istruzione domiciliare oppure la famiglia.
+
+## La traccia del messaggio alla classe
+
+[[Testo da scrivere: qui andrà la traccia del messaggio che l'insegnante dà alla classe, concordato con la famiglia.]]

@@ -1,0 +1,20 @@
+# Una riga di descrizione per ogni soggetto, nell'elenco «I soggetti».
+# Si scrive il numero a due cifre, i due punti e la frase.
+# Se manca la riga di un soggetto, lo script lo segnala e usa il primo passo
+# della colonna «Che cosa fa la classe».
+
+01: La classe sceglie un custode da mettere sul banco accanto a quello del bambino e gli dà un nome e dei poteri.
+02: Ognuno colora la sua sagoma e tutte insieme, con quella del bambino, formano una foto di classe su un cartellone.
+03: A piccoli gruppi la classe disegna in una finestra un posto inventato; tutte le finestre vanno al bambino.
+04: A piccoli gruppi la classe inventa merende dei sogni, con ingredienti e poteri, e le manda al bambino.
+05: La classe prova il gioco inventato dal bambino, racconta com'è andata e propone delle varianti.
+06: La classe risponde al messaggio del bambino e aggiunge una notizia straordinaria, vera o inventata.
+07: Ognuno ricalca la sua mano; tutte le mani, con quella del bambino, formano un girotondo sul cartellone.
+08: Ognuno colora e decora una maschera; tutte, con quella del bambino, vanno su un cartellone.
+09: Intorno allo zaino del bambino ognuno incolla un oggetto che porta sempre con sé e scrive perché.
+10: Ognuno disegna una tappa di una gita, vera o inventata; una strada parte dal pullman e le unisce tutte.
+11: La classe gioca a gruppi la caccia al tesoro preparata dal bambino e poi gli manda le gemme con i messaggi.
+12: Ognuno trasforma una nuvola e tutte, con una del bambino, formano un cielo su un cartellone azzurro.
+13: La classe decide il finale della storia del bambino e quattro gruppi lo disegnano in quattro riquadri.
+14: Un gruppo colora una macchina fantastica e ognuno aggiunge un pulsante, scrivendo a che cosa serve.
+15: Ognuno disegna uno stemma, anche il bambino; la classe vota le parti dello stemma definitivo.

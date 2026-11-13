@@ -1,0 +1,45 @@
+# Testi della pagina «Come funziona».
+# Le righe che cominciano con # non compaiono sul sito.
+# Come si scrive: una riga vuota separa i paragrafi; «## » all'inizio fa un titolo,
+# «### » un titolo più piccolo; «- » una voce di elenco; «1. » un passo numerato;
+# **parole** in grassetto; [[testo]] un segnaposto in un riquadro tratteggiato.
+# Dopo una modifica: doppio clic su aggiorna_sito.bat.
+
+## Come funziona la staffetta
+
+Il docente della scuola in ospedale o dell'istruzione domiciliare avvia lo scambio e lo accompagna; l'insegnante di classe lo fa vivere con i compagni; la famiglia porta i fogli avanti e indietro.
+
+1. **Si raccoglie il consenso.** Il docente della scuola in ospedale o dell'istruzione domiciliare propone il quaderno alla famiglia e raccoglie il suo consenso al contatto con la classe, come per ogni raccordo con la scuola di appartenenza.
+1. **Il bambino comincia dal banco.** Il primo soggetto è sempre il banco. Poi il bambino sceglie ogni volta il soggetto che vuole: non c'è un ordine da seguire né una scadenza. Scrive nella pagina 1, o racconta a un adulto che scrive per lui, e colora la pagina 2.
+1. **La pagina va in classe.** Un adulto, la famiglia o il docente SiO, fotografa la pagina colorata e la manda all'insegnante di classe con il numero e il titolo del soggetto scelto, per esempio «3, La finestra magica». La pagina con le risposte scritte si manda solo se il bambino è d'accordo. In alcuni soggetti quello che scrive serve alla classe (le regole del gioco, la storia, gli indizi del tesoro): se non vuole mandare la pagina, un adulto ricopia solo quella parte.
+1. **L'insegnante trova il soggetto sul sito.** Sul sito c'è l'elenco dei quindici soggetti, numerati e con una breve descrizione. L'insegnante apre quello scelto dal bambino e trova che cosa fa la classe, passo per passo, e i fogli da stampare.
+1. **La classe risponde.** L'insegnante mostra o legge alla classe il lavoro del bambino. La classe risponde con un lavoro suo, in uno dei tre modi descritti qui sotto.
+1. **Il lavoro della classe torna al bambino.** L'insegnante lo fotografa. La foto, o i fogli originali, arrivano al bambino tramite la famiglia o il docente SiO e lui li incolla nella pagina 4 del soggetto o li ferma con una graffetta.
+1. **Tutto va nel quaderno gemello.** La stampa della pagina del bambino e la copia del lavoro della classe si conservano in classe, in un raccoglitore sopra o sotto il suo banco.
+
+## Come lavora la classe {#come-lavora}
+
+Per ogni soggetto la pagina del sito dice quale di questi tre modi usare. In tutti e tre la classe lavora dopo aver visto la pagina del bambino.
+
+- {#cartellone} **Il cartellone a tessere.** Ognuno fa il suo pezzo al proprio banco, tutti nello stesso momento: una sagoma, una mano, una nuvola, una maschera. I pezzi si ritagliano e si incollano su un cartellone, insieme a quello del bambino stampato dalla sua pagina. Il cartellone resta appeso preferibilmente vicino al banco e al bambino arriva la foto. Così lavorano la foto di classe, il girotondo delle mani, la maschera, lo zaino magico, la gita, le nuvole e l'invenzione.
+- {#piccoli-gruppi} **I piccoli gruppi.** Gruppi di quattro o cinque compagni preparano ciascuno un foglio e i fogli vanno tutti al bambino. Così lavorano la finestra magica, la merenda dei sogni e la storia a staffetta, dove ogni gruppo disegna un riquadro del finale.
+- {#tutta-la-classe} **Tutta la classe con l'insegnante.** La classe discute, sceglie o vota e arriva a un solo lavoro comune. Così lavorano il banco, la ricreazione, la lavagna dei messaggi e lo stemma. Nel tesoro nascosto la classe gioca a gruppi la caccia al tesoro preparata dal bambino, con l'aiuto a distanza dell'insegnante di classe.
+
+## Il quaderno gemello
+
+In classe, sopra o sotto il banco del bambino, c'è un raccoglitore. Per ogni soggetto ci vanno la stampa della pagina del bambino e la copia di quello che la classe gli ha mandato. Alla fine il bambino ha il suo quaderno e la classe ha il gemello: due ricordi della stessa storia. Non chiede lavoro in più: la foto della pagina del bambino arriva comunque, perché è da lì che parte la risposta della classe.
+
+## Il formato dei fogli
+
+Il quaderno è in formato A4, come i fogli che la classe stampa dal sito: si incollano nella pagina 4 senza ritagli. Anche le foto dei cartelloni si stampano in A4.
+
+## Alcune attenzioni {#attenzioni}
+
+- **Il banco resta al suo posto.** È la richiesta più importante da fare alla scuola di appartenenza. Il banco del bambino rimane in classe con il suo nome e con i custodi del posto: quello disegnato da lui e quello scelto dai compagni. Sopra o sotto il banco c'è anche il quaderno gemello.
+- **Ogni domanda ha una seconda possibilità.** Se il bambino non vuole o non può rispondere, l'ultima riga gli offre un'altra strada: disegnare, inventare oppure rimandare a un altro giorno. In quel caso il calendario si sposta.
+- **Può scrivere qualcun altro per lui.** Se è stanco o troppo piccolo, il bambino racconta e un adulto scrive.
+- **Nessuna pagina è in ritardo.** Nelle settimane difficili il quaderno può restare chiuso. Un soggetto lasciato a metà o una riga senza risposta vanno bene così: non c'è niente da recuperare.
+- **I testi non nominano la malattia e non promettono il ritorno.** Se il bambino ne parla, è lui a deciderlo.
+- **Tutti i compagni partecipano, anche chi lo conosceva poco.** Nei cartelloni ognuno fa il suo pezzo; nei piccoli gruppi i gruppi cambiano da un soggetto all'altro.
+- **Si fotografano i lavori, non i bambini.** Nelle foto che escono dalla classe non compaiono i volti dei compagni.
+- **I materiali vanno verificati con il reparto.** Colla, pennarelli, cartoncino, pasta adesiva, graffette: meglio chiedere prima, soprattutto per i bambini in isolamento.

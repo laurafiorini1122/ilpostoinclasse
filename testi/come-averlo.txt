@@ -1,0 +1,13 @@
+# Testi della pagina «Come averlo».
+# Le righe che cominciano con # non compaiono sul sito.
+# Come si scrive: una riga vuota separa i paragrafi; «## » all'inizio fa un titolo,
+# «### » un titolo più piccolo; «- » una voce di elenco; «1. » un passo numerato;
+# **parole** in grassetto; [[testo]] un segnaposto in un riquadro tratteggiato.
+# Dopo una modifica: doppio clic su aggiorna_sito.bat.
+
+Il quaderno è gratuito: tutte le pagine si scaricano dal sito e si possono stampare per uso scolastico. Per ora il sito è all'indirizzo provvisorio https://laurafiorini1122.github.io/ilpostoinclasse/.
+
+- **Dal sito, gratis.** Le pagine del bambino si stampano in A4 e si raccolgono in un quadernone, in una cartellina o con una spirale. Le pagine per la classe sono in un elenco numerato, con il titolo e una breve descrizione di ogni soggetto.
+- **Stampato e rilegato, a prezzo di costo.** Chi preferisce avere tutto raccolto può acquistarlo su Amazon in formato A4 a circa 5 euro (prezzo da confermare), che copre solo la stampa. Tiene insieme, nell'ordine giusto, le pagine del bambino e quelle della classe e diventa più facilmente un ricordo da conservare.
+
+Il sito non usa cookie, non raccoglie dati e non contiene statistiche.

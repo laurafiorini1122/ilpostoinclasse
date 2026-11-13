@@ -1,0 +1,20 @@
+# Idee dalle classi per il soggetto 02, La foto di classe.
+# Le righe che cominciano con # non compaiono sul sito.
+#
+# Come aggiungere un contributo:
+#   1. scrivi una riga con il ruolo di chi lo ha mandato, così:
+#        Ruolo: insegnante di classe
+#   2. sotto, il testo (se è lungo, separa i paragrafi con una riga vuota);
+#   3. fra un contributo e l'altro scrivi una riga con tre trattini:
+#        ---
+#   4. doppio clic su aggiorna_sito.bat.
+# Finché qui sotto non c'è niente, sul sito compare la frase «Non ci sono ancora idee per questo soggetto.»
+# Mai nomi di bambini, scuole, ospedali o reparti, mai informazioni sulla salute.
+#
+# Esempio (le righe con # non escono sul sito):
+# Ruolo: insegnante di classe
+# Abbiamo usato questo soggetto con una classe prima e ...
+# ---
+# Ruolo: genitore
+# Un altro contributo.
+
