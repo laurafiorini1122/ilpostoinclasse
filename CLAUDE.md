@@ -33,7 +33,7 @@ spesso da telefono.
   Frasi brevi fisse in alto nello script; testi lunghi delle pagine in `testi/*.txt`
   (presi dalla presentazione, non riscriverli); descrizioni dell'elenco in `testi/descrizioni.txt`;
   grafica in `modello/stile.css`.
-- Menu: Il quaderno · I soggetti · Per cominciare · Come funziona · Idee e consigli · Come averlo.
+- Menu: Il quaderno · Come funziona · I soggetti · Per cominciare · Idee e consigli · Come averlo.
 - `idee/NN.txt` e `idee/generale.txt`: contributi scritti da Laura («Ruolo:» + testo, separati da `---`).
   Lo script crea i file mancanti ma non modifica mai quelli esistenti.
 - Foglio dei nomi unico in `/foglio-dei-nomi/?n=NN` (titolo messo da un piccolo script inline),

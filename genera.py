@@ -70,9 +70,9 @@ AUTRICE = "Laura Fiorini"
 MENU = [
     # (voce del menu, cartella, chiave)
     ("Il quaderno", "", "home"),
+    ("Come funziona", "come-funziona/", "come-funziona"),
     ("I soggetti", "classe/", "elenco"),
     ("Per cominciare", "per-cominciare/", "per-cominciare"),
-    ("Come funziona", "come-funziona/", "come-funziona"),
     ("Idee e consigli", "idee-e-consigli/", "idee-e-consigli"),
     ("Come averlo", "come-averlo/", "come-averlo"),
 ]
@@ -540,7 +540,6 @@ def pagina(*, radice, titolo, descrizione, corpo, classe_body, attiva="", sezion
 </main>
 <footer class="piede">
   <ul>
-    <li><strong>{e(AUTRICE)}</strong></li>
     <li><span class="segnaposto-breve">{e(PIEDE_PDF)}</span></li>
     <li>{e(PIEDE_STAMPA)}</li>
     <li>{e(PIEDE_DATI)}</li>
