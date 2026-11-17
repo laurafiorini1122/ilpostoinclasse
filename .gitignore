@@ -1,5 +1,6 @@
 # I disegni stanno in disegni/: la copia dentro sito/ serve solo per l'anteprima
 sito/disegni/
+sito/presentazione.pdf
 # Mai l'Excel nel repository (contiene note e prompt di lavoro)
 *.xlsx
 *.xlsb

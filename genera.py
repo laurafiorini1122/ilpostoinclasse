@@ -10,7 +10,8 @@ Lo script:
   le note, lo stato e i prompt non escono mai);
 - legge i testi delle pagine fisse da testi/ e le idee da idee/;
 - crea in idee/ i file che mancano (uno per soggetto), ma non tocca mai quelli che ci sono;
-- ricrea da zero la cartella sito/ (tranne i disegni, che copia da disegni/);
+- ricrea da zero la cartella sito/ (tranne i disegni, che copia da disegni/,
+  e la presentazione, che copia da presentazione/);
 - non modifica mai l'Excel.
 
 Usa solo Python standard: non serve installare niente.
@@ -41,6 +42,9 @@ QUI = Path(__file__).resolve().parent
 SITO = QUI / "sito"
 MODELLO = QUI / "modello"
 DISEGNI = QUI / "disegni"
+# La presentazione in PDF: quando cambia versione basta sostituire il file
+# tenendo lo stesso nome.
+PRESENTAZIONE = QUI / "presentazione" / "presentazione.pdf"
 TESTI = QUI / "testi"
 IDEE = QUI / "idee"
 
@@ -97,6 +101,7 @@ FOGLIO_IN_PREPARAZIONE = "Foglio in preparazione"
 RIGHE_FOGLIO_NOMI = 20
 
 PIEDE_PDF = "Presentazione completa in PDF (in preparazione)"
+PIEDE_PDF_LINK = "Presentazione completa"
 PIEDE_STAMPA = "Le pagine si possono stampare per uso scolastico."
 PIEDE_DATI = "Il sito non usa cookie e non raccoglie dati."
 
@@ -515,6 +520,14 @@ def peso(byte):
     return f"{byte / 1024 / 1024:.1f} MB".replace(".", ",")
 
 
+def voce_presentazione(radice):
+    """Il link alla presentazione nel piè di pagina; se il PDF manca, il segnaposto."""
+    if not PRESENTAZIONE.exists():
+        return f'<span class="segnaposto-breve">{e(PIEDE_PDF)}</span>'
+    return (f'<a href="{radice}presentazione.pdf">{e(PIEDE_PDF_LINK)}</a> '
+            f'(PDF, {peso(PRESENTAZIONE.stat().st_size)})')
+
+
 def pagina(*, radice, titolo, descrizione, corpo, classe_body, attiva="", sezione="", extra_testa="", extra_piede=""):
     """radice: percorso relativo verso la cartella principale del sito ('', '../', '../../').
     attiva: la voce del menu che corrisponde a questa pagina; sezione: la voce a cui la pagina appartiene."""
@@ -562,7 +575,7 @@ def pagina(*, radice, titolo, descrizione, corpo, classe_body, attiva="", sezion
 </main>
 <footer class="piede">
   <ul>
-    <li><span class="segnaposto-breve">{e(PIEDE_PDF)}</span></li>
+    <li>{voce_presentazione(radice)}</li>
     <li>{e(PIEDE_STAMPA)}</li>
     <li>{e(PIEDE_DATI)}</li>
   </ul>
@@ -907,6 +920,12 @@ def costruisci(soggetti):
     (SITO / "disegni").mkdir(exist_ok=True)
     for pdf in DISEGNI.glob("*.pdf"):
         shutil.copy(pdf, SITO / "disegni" / pdf.name)
+
+    # Presentazione: anche lei copiata solo per l'anteprima.
+    if PRESENTAZIONE.exists():
+        shutil.copy(PRESENTAZIONE, SITO / "presentazione.pdf")
+    else:
+        AVVISI.append("manca presentazione/presentazione.pdf: nel piè di pagina resta il segnaposto")
 
 
 def main():

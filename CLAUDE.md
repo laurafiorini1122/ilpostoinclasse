@@ -41,6 +41,8 @@ spesso da telefono.
 - Segnaposto sempre tratteggiati (`.segnaposto`, `.segnaposto-breve`, `[[testo]]` nei file di testi/).
 - `disegni/NN.pdf` li mette Laura. In `sito/disegni` c'è solo una copia per l'anteprima
   (ignorata da git); la Action `.github/workflows/pubblica.yml` copia `disegni/` in `sito/` e pubblica.
+- Presentazione in `presentazione/presentazione.pdf` (nome fisso: per una versione nuova si sostituisce
+  il file). Link nel piè di pagina; come i disegni, in `sito/` c'è solo la copia per l'anteprima.
 - Fondo per tipo: Legame giallo, Vita di classe verde, Libero azzurro; home e pagine di testo pesca, elenco lilla.
 - `/classe/1` … `/classe/9` rimandano a `/classe/01` … `/classe/09`.
 - Anteprima: `anteprima.bat`, oppure `preview_start` con la configurazione `ilpostoinclasse`.

@@ -1,6 +1,6 @@
 # Pubblicazione automatica su GitHub Pages.
 # A ogni push sul ramo main GitHub prende la cartella sito/, ci aggiunge i disegni
-# e la pubblica. Il sito si genera sul computer con aggiorna_sito.bat:
+# e la presentazione in PDF e la pubblica. Il sito si genera sul computer con aggiorna_sito.bat:
 # qui non si costruisce niente.
 #
 # Due fasi separate, come consiglia GitHub:
@@ -33,6 +33,7 @@ jobs:
         run: |
           mkdir -p sito/disegni
           cp disegni/*.pdf sito/disegni/ 2>/dev/null || true
+          cp presentazione/presentazione.pdf sito/ 2>/dev/null || true
           rm -f sito/.generato
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
